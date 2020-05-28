@@ -1,4 +1,4 @@
 package com.tsyrulik;
 
-public class Room {
+public class Main {
 }

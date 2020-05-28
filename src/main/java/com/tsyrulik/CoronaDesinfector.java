@@ -1,12 +1,20 @@
 package com.tsyrulik;
 
+import com.tsyrulik.announcer.Announcer;
+import com.tsyrulik.announcer.impl.ConsoleAnnouncer;
+import com.tsyrulik.model.Room;
+import com.tsyrulik.policeman.Policeman;
+import com.tsyrulik.policeman.impl.PolicemanImpl;
+
 public class CoronaDesinfector {
+    private Announcer announcer = new ConsoleAnnouncer();
+    private Policeman policeman = new PolicemanImpl();
 
     public void start(Room room) {
-        //todo сообщить всем присутствующим в комнате, о начале дезинфекции, и попросить всех разойтись
-        //todo разогнать всех кто не вышел после объявления
+        announcer.announce("Начинаем дезинфекцию, все вон!");
+        policeman.makePeopleLeaveRoom();
         desinfect(room);
-        //todo сообщить всем присутствующим в комнате, что они могут вернуться обртано
+        announcer.announce("Рискните зайти обратно");
     }
 
     private void desinfect(Room room) {
