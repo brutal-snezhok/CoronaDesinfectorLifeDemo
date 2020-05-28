@@ -5,7 +5,7 @@ import com.tsyrulik.recommendator.Recommendator;
 
 public class RecommendatorImpl implements Recommendator {
 
-    @InjectProperty("")
+    @InjectProperty("wisky")
     private String alcohol;
 
     @Override
