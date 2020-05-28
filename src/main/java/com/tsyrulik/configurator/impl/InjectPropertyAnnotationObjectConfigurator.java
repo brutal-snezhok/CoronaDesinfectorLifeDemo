@@ -1,7 +1,7 @@
 package com.tsyrulik.configurator.impl;
 
 import com.tsyrulik.configurator.ObjectConfigurator;
-import com.tsyrulik.recommendator.InjectProperty;
+import com.tsyrulik.annotation.InjectProperty;
 import lombok.SneakyThrows;
 
 import java.io.BufferedReader;
