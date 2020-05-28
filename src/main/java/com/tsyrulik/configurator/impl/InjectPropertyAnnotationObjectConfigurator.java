@@ -2,6 +2,7 @@ package com.tsyrulik.configurator.impl;
 
 import com.tsyrulik.configurator.ObjectConfigurator;
 import com.tsyrulik.annotation.InjectProperty;
+import com.tsyrulik.context.ApplicationContext;
 import lombok.SneakyThrows;
 
 import java.io.BufferedReader;
@@ -26,7 +27,7 @@ public class InjectPropertyAnnotationObjectConfigurator implements ObjectConfigu
 
     @Override
     @SneakyThrows
-    public void configure(Object t) {
+    public void configure(Object t, ApplicationContext context) {
         Class<?> implClass = t.getClass();
         for (Field field: implClass.getDeclaredFields()) {
             InjectProperty annotation = field.getAnnotation(InjectProperty.class);
