@@ -1,4 +1,6 @@
-package com.tsyrulik.policeman;
+package com.tsyrulik.policeman.impl;
+
+import com.tsyrulik.policeman.Policeman;
 
 public class AngryPoliceman implements Policeman {
     @Override

@@ -3,7 +3,7 @@ package com.tsyrulik;
 import com.tsyrulik.context.Application;
 import com.tsyrulik.context.ApplicationContext;
 import com.tsyrulik.model.Room;
-import com.tsyrulik.policeman.AngryPoliceman;
+import com.tsyrulik.policeman.impl.AngryPoliceman;
 import com.tsyrulik.policeman.Policeman;
 
 import java.util.HashMap;
