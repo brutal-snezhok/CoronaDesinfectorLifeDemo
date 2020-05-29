@@ -5,6 +5,7 @@ import com.tsyrulik.annotation.Singleton;
 import com.tsyrulik.recommendator.Recommendator;
 
 @Singleton
+//@Deprecated
 public class RecommendatorImpl implements Recommendator {
 
     @InjectProperty("wisky")
